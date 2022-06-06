@@ -1,0 +1,117 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* colors */
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --shadow: rgba(0, 0, 0, 0.1) 0 10px 20px;
+}
+
+/* fonts */
+h1 {
+  text-align: center;
+  padding: 25px;
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  padding: 50px 25px 25px 25px;
+  text-align: left;
+}
+
+/* boxes */
+.chickenbox {
+  float: right;
+  background-color: blue;
+  color: white;
+  padding: 5px 50px;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 10px;
+}
+
+.beefbox {
+  float: right;
+  background-color: greenyellow;
+  padding: 5px 50px;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 10px;
+}
+
+.sushibox {
+  float: right;
+  background-color: turquoise;
+  padding: 5px 50px;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 10px;
+}
+
+/* outter container */
+.container {
+  padding: 0 20px;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+  .column {
+    width: 33.3%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .column.tablet {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
